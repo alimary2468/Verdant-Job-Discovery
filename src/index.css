@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .shadow-verdant {
+    box-shadow: 0 1px 3px rgba(16, 185, 129, 0.06), 0 4px 12px rgba(16, 185, 129, 0.04);
+  }
+  .shadow-verdant-hover {
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.12), 0 1px 3px rgba(16, 185, 129, 0.06);
+  }
+  .shadow-verdant-lg {
+    box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.10), 0 8px 10px -6px rgba(16, 185, 129, 0.05);
+  }
+}
+
+/* Custom animations & smooth transitions */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.animate-shimmer-mint {
+  background: linear-gradient(90deg, #E6FDF2 25%, #D1FAE5 50%, #E6FDF2 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
